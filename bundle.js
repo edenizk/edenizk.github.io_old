@@ -93,9 +93,13 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".coin_text{\r\n    font-family: Roboto;\r\n    font-weight: 700;\r\n    font-size: 4vh;\r\n    color: white;\r\n    margin-bottom: 1vh;\r\n}\r\n.coin {\r\n    display: inline-block;\r\n    width: 4vh;\r\n    height: 4vh;\r\n    animation: coin 3s linear infinite;\r\n    margin: 0 auto;\r\n    background: #F0C419;\r\n    border-radius: 50%;\r\n}\r\n\r\n@keyframes coin {\r\n  0% {\r\n    transform: rotateY(0);\r\n  }\r\n  100% {\r\n    transform: rotateY(360deg);\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .coin_text{\r\n    font-size: 3vh;\r\n  }\r\n\r\n  .coin {\r\n    width: 3vh;\r\n    height: 3vh;\r\n}\r\n}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -107,12 +111,16 @@ exports.push([module.i, ".coin_text{\r\n    font-family: Roboto;\r\n    font-wei
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700,900);", ""]);
-exports.i(__webpack_require__(/*! -!../node_modules/css-loader/dist/cjs.js!./coin.css */ "./node_modules/css-loader/dist/cjs.js!./src/coin.css"), "");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_modules/css-loader/dist/cjs.js!./coin.css */ "./node_modules/css-loader/dist/cjs.js!./src/coin.css");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700,900);"]);
+exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 // Module
 exports.push([module.i, "body,\r\nhtml,\r\n#wrapper {\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  scroll-behavior: smooth;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  font-family: Roboto;\r\n}\r\n\r\n.space_sections {\r\n  position: relative;\r\n  height: 100vh;\r\n  background-color: #2e005d;\r\n}\r\n\r\n#main-button {\r\n  width: 5vh;\r\n}\r\n\r\n/* navigation */\r\n.icon {\r\n  position: relative;\r\n  float: left;\r\n  margin-right: 0.2vw;\r\n  width: 1.5vw;\r\n  height: 1.5vw;\r\n  border: 0.1vw black solid;\r\n  padding: 0.1vw;\r\n  border-radius: 50%;\r\n  transition: 0.8s;\r\n}\r\n\r\n.icon:hover {\r\n  width: 1.8vw;\r\n  height: 1.8vw;\r\n  border: 0.2vw black solid;\r\n  background: white;\r\n}\r\n\r\n.nav_text {\r\n  /* position: static;\r\n  visibility: visible; */\r\n  position: absolute;\r\n  visibility: hidden;\r\n  opacity: 0;\r\n  display: block;\r\n  font-weight: 900;\r\n  font-size: 1vw;\r\n  margin: 0.2vw;\r\n  text-decoration: underline;\r\n  color: black;\r\n}\r\n\r\n.icon:hover+.nav_text {\r\n  visibility: visible;\r\n  bottom: 0;\r\n  opacity: 1;\r\n  transition: opacity 1s linear;\r\n}\r\n\r\n#nav_buttons {\r\n  position: fixed;\r\n  margin: 2vh;\r\n  z-index: 90;\r\n  height: 4vw;\r\n}\r\n\r\n#working_text {\r\n  color: black;\r\n  font-size: 1.5vh;\r\n  float: right;\r\n}\r\n\r\n.nav_link {\r\n  vertical-align: top;\r\n  display: inline-block;\r\n  text-align: center;\r\n}\r\n\r\n@media (orientation: portrait) {\r\n  .icon {\r\n    width: 1.5vh;\r\n    height: 1.5vh;\r\n    margin-right: 0.2vh;\r\n    border: 0.1vh black solid;\r\n    padding: 0.1vh;\r\n  }\r\n\r\n  .icon:hover {\r\n    width: 1.8vh;\r\n    height: 1.8vh;\r\n    border: 0.2vh black solid;\r\n    margin: 0.2vh;\r\n  }\r\n\r\n  .nav_text {\r\n    position: static;\r\n    float: left;\r\n    visibility: visible;\r\n    bottom: 0;\r\n    opacity: 1;\r\n    font-size: 1vh;\r\n  }\r\n}\r\n\r\n/* end */\r\n/* Intro */\r\n#intro {\r\n  position: relative;\r\n  background-color: #dcf3ff;\r\n  height: 100vh;\r\n}\r\n\r\n.my_title {\r\n  position: absolute;\r\n  left: 10vh;\r\n  top: 10vh;\r\n  text-align: center;\r\n  z-index: 10;\r\n  color: black;\r\n  font-weight: 900;\r\n  font-size: 10vh;\r\n  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.sun {\r\n  position: absolute;\r\n  width: 20vh;\r\n  top: 20px;\r\n  right: 20px;\r\n  bottom: 10%;\r\n}\r\n\r\n.city {\r\n  position: absolute;\r\n  bottom: 40vh;\r\n  right: 0px;\r\n  width: 85vh;\r\n  z-index: 1;\r\n}\r\n\r\n.sea {\r\n  position: absolute;\r\n  bottom: 0;\r\n  height: 40vh;\r\n  width: 100%;\r\n  background-color: #0180ed;\r\n  z-index: 0;\r\n}\r\n\r\n.front {\r\n  position: absolute;\r\n  width: 100%;\r\n  bottom: 0px;\r\n}\r\n\r\n@media (orientation: portrait) {\r\n  .my_title {\r\n    top: auto;\r\n    left: auto;\r\n    bottom: 20vh;\r\n    font-size: 5vh;\r\n    width: 100%;\r\n    left: auto;\r\n    text-align: center;\r\n  }\r\n}\r\n\r\n#scroll_down a span {\r\n  position: absolute;\r\n  bottom: 5vh;\r\n  right: 5%;\r\n  width: 8vh;\r\n  height: 8vh;\r\n  border-left: 0.5vh solid #fff;\r\n  border-bottom: 0.5vh solid #fff;\r\n  -webkit-transform: rotate(-45deg);\r\n  transform: rotate(-45deg);\r\n  -webkit-animation: sdb04 2s infinite;\r\n  animation: sdb04 2s infinite;\r\n  box-sizing: border-box;\r\n  transition: 0.3s;\r\n}\r\n\r\n@-webkit-keyframes sdb04 {\r\n  0% {\r\n    -webkit-transform: rotate(-45deg) translate(0, 0);\r\n  }\r\n\r\n  20% {\r\n    -webkit-transform: rotate(-45deg) translate(-0.8vw, 0.8vw);\r\n  }\r\n\r\n  40% {\r\n    -webkit-transform: rotate(-45deg) translate(0, 0);\r\n  }\r\n}\r\n\r\n@keyframes sdb04 {\r\n  0% {\r\n    transform: rotate(-45deg) translate(0, 0);\r\n  }\r\n\r\n  20% {\r\n    transform: rotate(-45deg) translate(-0.8vw, 0.8vw);\r\n  }\r\n\r\n  40% {\r\n    transform: rotate(-45deg) translate(0, 0);\r\n  }\r\n}\r\n\r\n#scroll_down a span:hover {\r\n  border-color: #000;\r\n}\r\n\r\n/* end */\r\n/* underground */\r\n#underground {\r\n  position: relative;\r\n  background-color: #3a3532;\r\n}\r\n\r\n#earth {\r\n  width: 100%;\r\n}\r\n\r\n#main_underground {\r\n  position: relative;\r\n  height: 110vh;\r\n}\r\n\r\n#underground_text {\r\n  text-align: center;\r\n  position: relative;\r\n  top: 25%;\r\n  font-size: 8vh;\r\n  color: white;\r\n  font-weight: 700;\r\n}\r\n\r\n#stone_top {\r\n  position: absolute;\r\n  width: 100%;\r\n  bottom: 0;\r\n}\r\n\r\n/* end */\r\n/* skills and certificates */\r\n#skills_and_certifications {\r\n  position: relative;\r\n  min-height: 110vh;\r\n  background-color: #3a3532;\r\n  text-align: center;\r\n}\r\n\r\n#green_pipe {\r\n  position: absolute;\r\n  left: 40%;\r\n  top: -25%;\r\n  height: 150vh;\r\n  width: 35vh;\r\n  z-index: 10;\r\n}\r\n\r\n#skills_wrapper {\r\n  position: absolute;\r\n  width: 40%;\r\n  left: 2vh;\r\n  bottom: 15vh;\r\n  top: 5vh;\r\n}\r\n\r\n.skills {\r\n  display: inline-block;\r\n  width: 20vh;\r\n  margin: 3vh;\r\n  margin-top: 8vh;\r\n}\r\n\r\n#certificates_wrapper {\r\n  position: absolute;\r\n  width: 40%;\r\n  bottom: 15vh;\r\n  right: 2vh;\r\n  top: 5vh;\r\n}\r\n\r\n.skills_certificates_text {\r\n  font-weight: 700;\r\n  margin-bottom: 5%;\r\n  font-size: 8vh;\r\n  color: white;\r\n}\r\n\r\n.certificates {\r\n  height: 20vh;\r\n  margin: 3vh;\r\n  transition: 0.3s;\r\n}\r\n\r\n.certificates:hover {\r\n  height: 20.1vh;\r\n  margin: 3.1vh;\r\n}\r\n\r\n#stone_bot {\r\n  position: absolute;\r\n  width: 100%;\r\n  left: 0px;\r\n  bottom: 0px;\r\n}\r\n\r\n@media screen and (max-width: 1400px) {\r\n  #skills_and_certifications {\r\n    min-height: 240vh;\r\n  }\r\n\r\n  #green_pipe {\r\n    position: absolute;\r\n    left: auto;\r\n    right: 1%;\r\n    top: auto;\r\n    bottom: 60vh;\r\n    height: auto;\r\n    width: 25vh;\r\n    transform: scaleY(2.4);\r\n  }\r\n\r\n  #skills_wrapper {\r\n    position: relative;\r\n    width: 60%;\r\n    left: auto;\r\n    bottom: auto;\r\n    top: 5vh;\r\n    padding-bottom: 5vh;\r\n    border-bottom: 3px white solid;\r\n  }\r\n\r\n  .skills {\r\n    display: inline-block;\r\n    width: 100%;\r\n    left: 0;\r\n    margin: auto;\r\n  }\r\n\r\n  #certificates_wrapper {\r\n    position: relative;\r\n    width: 60%;\r\n    bottom: 10vh;\r\n    right: auto;\r\n  }\r\n\r\n  .certificates {\r\n    margin: 0;\r\n    margin-top: 2vh;\r\n    left: 0;\r\n    width: 100%;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  #skills_and_certifications {\r\n    min-height: 210vh;\r\n  }\r\n\r\n  .skills_certificates_text {\r\n    font-size: 4vh;\r\n  }\r\n\r\n  #certificates_wrapper {\r\n    position: relative;\r\n\r\n    width: 40%;\r\n    left: 5%;\r\n    bottom: 5vh;\r\n  }\r\n\r\n  #skills_wrapper {\r\n    position: relative;\r\n    left: 5%;\r\n    padding-bottom: 2vh;\r\n    width: 40%;\r\n  }\r\n\r\n  #green_pipe {\r\n    bottom: 67vh;\r\n    width: 15vh;\r\n    transform: scaleY(3.4);\r\n  }\r\n}\r\n\r\n/* end */\r\n/* About Me */\r\n#about_me {\r\n  position: relative;\r\n  height: 100vh;\r\n  background-color: #2e005d;\r\n}\r\n\r\n#title_about_me {\r\n  position: absolute;\r\n  left: 5vh;\r\n  top: 5vh;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-style: normal;\r\n  font-weight: bold;\r\n  font-size: 5vh;\r\n  line-height: normal;\r\n  text-align: center;\r\n  color: white;\r\n}\r\n\r\n#about_me_text {\r\n  position: absolute;\r\n  top: 20vh;\r\n  left: 45vh;\r\n  text-align: center;\r\n  width: 50%;\r\n  font-weight: 100;\r\n  font-size: 5vh;\r\n  color: white;\r\n  z-index: 10;\r\n}\r\n\r\n.stars {\r\n  position: absolute;\r\n  opacity: 0.5;\r\n  width: 50vh;\r\n  z-index: 0;\r\n}\r\n\r\n#about_me_comet {\r\n  position: absolute;\r\n  left: 10vh;\r\n  top: 10vh;\r\n  width: 50vh;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) {\r\n  #about_me {\r\n    position: relative;\r\n    height: 100vh;\r\n    background-color: #2e005d;\r\n  }\r\n\r\n  #about_me_text {\r\n    position: absolute;\r\n    top: 20vh;\r\n    left: 10vh;\r\n    /* font-size: 3vh; */\r\n  }\r\n\r\n  #about_me_comet {\r\n    right: 5vh;\r\n    bottom: 5vh;\r\n    left: auto;\r\n    top: auto;\r\n    width: 40vh;\r\n  }\r\n}\r\n\r\n@media (orientation: portrait) {\r\n  #about_me_text {\r\n    top: 30%;\r\n    left: 25%;\r\n    font-size: 2.5vh;\r\n  }\r\n\r\n  .stars {\r\n    position: absolute;\r\n    width: 20vh;\r\n  }\r\n\r\n  #about_me_comet {\r\n    position: absolute;\r\n    width: 20vh;\r\n    left: 5vh;\r\n    top: 5vh;\r\n  }\r\n}\r\n\r\n/* end */\r\n/* Projects */\r\n#projects {\r\n  position: relative;\r\n  height: 100vh;\r\n  background-color: #2e005d;\r\n}\r\n\r\n.project_stars {\r\n  position: absolute;\r\n  z-index: 0;\r\n  transition: 0.3s;\r\n}\r\n\r\n#cookie_clicker {\r\n  width: 10vw;\r\n  left: 2vw;\r\n  top: 38vh;\r\n}\r\n\r\n#dicer {\r\n  width: 15vw;\r\n  left: 15vw;\r\n  top: 15vh;\r\n}\r\n\r\n#inf_run {\r\n  width: 14vw;\r\n  left: 28vw;\r\n  top: 32vh;\r\n}\r\n\r\n#e-commerce_star {\r\n  width: 19vw;\r\n  left: 50vw;\r\n  top: 55vh;\r\n}\r\n\r\n#lasagna_star {\r\n  width: 21vw;\r\n  right: 2vw;\r\n  top: 40vh;\r\n}\r\n\r\n#sas_star {\r\n  width: 15vw;\r\n  right: 22vw;\r\n  top: 22vh;\r\n}\r\n\r\n#stars_project input:hover {\r\n  width: 25vw;\r\n}\r\n\r\n#project_comet {\r\n  position: absolute;\r\n  right: 90vh;\r\n  bottom: 20vh;\r\n}\r\n\r\n#Star_3 {\r\n  transform: scaleY(2);\r\n  background-color: red;\r\n  border: 2px blue solid;\r\n}\r\n\r\n#title_projects {\r\n  position: absolute;\r\n  right: 10vh;\r\n  top: 10vh;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-style: normal;\r\n  font-weight: bold;\r\n  font-size: 5vh;\r\n  line-height: normal;\r\n  text-align: center;\r\n  color: white;\r\n}\r\n\r\n#projects_overlay {\r\n  position: fixed;\r\n  /* Sit on top of the page content */\r\n  display: none;\r\n  /* Hidden by default */\r\n  width: 100%;\r\n  /* Full width (cover the whole page) */\r\n  height: 100%;\r\n  /* Full height (cover the whole page) */\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: rgba(0, 0, 0, 0.8);\r\n  z-index: 100;\r\n  /* Specify a stack order in case you're using a different order for other elements */\r\n  cursor: pointer;\r\n  /* Add a pointer on hover */\r\n  color: white;\r\n}\r\n\r\n#project_head_info {\r\n  position: absolute;\r\n  left: 5vw;\r\n  top: 10vh;\r\n  text-align: center;\r\n}\r\n\r\n#project_title {\r\n  font-family: 900;\r\n  font-size: 3vw;\r\n}\r\n\r\n#project_logo {\r\n  width: 15vw;\r\n  margin-top: 2vh;\r\n}\r\n\r\n#project_desc {\r\n  position: absolute;\r\n  font-size: 3vw;\r\n  right: 3vw;\r\n  top: 5vh;\r\n  bottom: 5vh;\r\n  left: 25vw;\r\n  padding-left: 3vw;\r\n  border-left: 1vw white solid;\r\n}\r\n\r\n#project_desc span {\r\n  font-weight: 900;\r\n  font-size: 3vw;\r\n}\r\n\r\n#project_used_tech {\r\n  text-align: left;\r\n  font-size: 1vw;\r\n  margin-top: 1vh;\r\n}\r\n\r\n#project_languages {\r\n  position: absolute;\r\n  margin-top: 1vh;\r\n  font-size: 2vw;\r\n}\r\n\r\n/* Position the close button (top right corner) */\r\n.close_project_btn {\r\n  position: absolute;\r\n  top: 2vh;\r\n  right: 2vw;\r\n  font-size: 6vh;\r\n  color: #818181;\r\n  display: block;\r\n  /* Display block instead of inline */\r\n  z-index: 101;\r\n}\r\n\r\n#project_git_link {\r\n  position: absolute;\r\n  text-decoration: underline;\r\n  font-size: 2vw;\r\n  color: #818181;\r\n  right: 2vw;\r\n  bottom: 2vh;\r\n}\r\n\r\n#project_git_link:hover,\r\n#project_git_link:focus,\r\n.close_project_btn:hover,\r\n.close_project_btn:focus {\r\n  color: white;\r\n  transition: 0.3s;\r\n  /* Transition effects on hover (color) */\r\n}\r\n\r\n@media (orientation: portrait) {\r\n  #project_head_info {\r\n    top: 2vh;\r\n    left: auto;\r\n    width: 100%;\r\n  }\r\n\r\n  #project_desc {\r\n    position: absolute;\r\n    padding: 2vh;\r\n    font-size: 4vw;\r\n    top: 50%;\r\n    right: auto;\r\n    left: auto;\r\n    border-left: 0;\r\n    border-top: 1vw white solid;\r\n  }\r\n\r\n  #project_title {\r\n    font-size: 6vw;\r\n  }\r\n\r\n  #project_logo {\r\n    width: 20vw;\r\n  }\r\n\r\n  #project_used_tech {\r\n    font-size: 2vh;\r\n    text-align: center;\r\n  }\r\n\r\n  #project_languages {\r\n    position: relative;\r\n    font-size: 6vw;\r\n  }\r\n}\r\n\r\n/* end */\r\n/* Contact */\r\n#contact_moon {\r\n  position: absolute;\r\n  width: 50vh;\r\n  right: 5vh;\r\n  top: 5vh;\r\n}\r\n\r\n#contact_text {\r\n  left: 5vw;\r\n  top: 20vh;\r\n  position: absolute;\r\n  text-align: center;\r\n}\r\n\r\n#title_contact {\r\n  /* position: absolute; */\r\n  font-weight: 700;\r\n  color: white;\r\n  font-size: 8vh;\r\n  text-align: center;\r\n  text-shadow: 30px 30px 20px rgba(255, 255, 255, 0.2);\r\n}\r\n\r\n#my_email {\r\n  font-weight: 200;\r\n  color: white;\r\n  font-size: 3vw;\r\n  text-align: center;\r\n  text-shadow: 30px 30px 20px rgba(255, 255, 255, 0.5);\r\n}\r\n\r\n#my_email:hover {\r\n  font-size: 3.2vw;\r\n  transition: 0.3s;\r\n}\r\n\r\n.contact_icon img {\r\n  height: 20vh;\r\n  transition: 0.3s;\r\n  margin-right: 3vh;\r\n}\r\n\r\n.contact_icon img:hover {\r\n  height: 20.5vh;\r\n}\r\n\r\n@media (orientation: portrait) {\r\n  #contact {\r\n    text-align: center;\r\n  }\r\n\r\n  #contact_moon {\r\n    width: 30vh;\r\n    right: 5vh;\r\n    top: 10vh;\r\n  }\r\n\r\n  #contact_text {\r\n    left: auto;\r\n    width: 100%;\r\n    top: 50vh;\r\n    position: absolute;\r\n    text-align: center;\r\n  }\r\n\r\n  #title_contact {\r\n    width: 100%;\r\n    font-size: 4vh;\r\n  }\r\n\r\n  #my_email {\r\n    width: 100%;\r\n    font-size: 3vh;\r\n  }\r\n\r\n  #my_email:hover {\r\n    font-size: 3vh;\r\n  }\r\n\r\n  #contact_icons {\r\n    width: 100%;\r\n  }\r\n\r\n  #contact_icons img {\r\n    width: 10vh;\r\n  }\r\n\r\n  #contact_icons img:hover {\r\n    width: 15vh;\r\n  }\r\n}\r\n\r\n/* end */\r\n/* end */\r\n#end_comet {\r\n  position: absolute;\r\n  right: 110vh;\r\n  top: 10vh;\r\n  width: 50vh;\r\n}\r\n\r\n\r\n#sitemap {\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: 0;\r\n}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -141,7 +149,7 @@ module.exports = function (useSourceMap) {
       var content = cssWithMappingToString(item, useSourceMap);
 
       if (item[2]) {
-        return "@media ".concat(item[2], "{").concat(content, "}");
+        return "@media ".concat(item[2], " {").concat(content, "}");
       }
 
       return content;
@@ -150,7 +158,7 @@ module.exports = function (useSourceMap) {
   // eslint-disable-next-line func-names
 
 
-  list.i = function (modules, mediaQuery) {
+  list.i = function (modules, mediaQuery, dedupe) {
     if (typeof modules === 'string') {
       // eslint-disable-next-line no-param-reassign
       modules = [[null, modules, '']];
@@ -158,30 +166,34 @@ module.exports = function (useSourceMap) {
 
     var alreadyImportedModules = {};
 
-    for (var i = 0; i < this.length; i++) {
-      // eslint-disable-next-line prefer-destructuring
-      var id = this[i][0];
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
 
-      if (id != null) {
-        alreadyImportedModules[id] = true;
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
       }
     }
 
     for (var _i = 0; _i < modules.length; _i++) {
-      var item = modules[_i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
+      var item = [].concat(modules[_i]);
 
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
-        }
-
-        list.push(item);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
       }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
     }
   };
 
@@ -200,7 +212,7 @@ function cssWithMappingToString(item, useSourceMap) {
   if (useSourceMap && typeof btoa === 'function') {
     var sourceMapping = toComment(cssMapping);
     var sourceURLs = cssMapping.sources.map(function (source) {
-      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
     });
     return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
   }
